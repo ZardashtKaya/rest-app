@@ -13,19 +13,19 @@
     <ion-card-content>
       <ion-item>
         <ion-label>Alcohol</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="alcohol" fill="outline" slot="end" (click)="alcohol()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Non-Alcohol</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="nonalcohol" fill="outline" slot="end" (click)="nonalcohol()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Cocktails</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="cocktails" fill="outline" slot="end" (click)="cocktails()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Hot Drinks</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="hotDrinks" fill="outline" slot="end" (click)="hotDrinks()">View</ion-button>
       </ion-item>
 
     </ion-card-content>
@@ -38,20 +38,21 @@
     <ion-card-content>
       <ion-item>
         <ion-label>Pizzas</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="pizzas" fill="outline" slot="end" (click)="pizzas()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Burgers</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="burgers" fill="outline" slot="end" (click)="burgers()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Salads</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="salads" fill="outline" slot="end" (click)="salads()">View</ion-button>
       </ion-item>
       <ion-item>
         <ion-label>Desserts</ion-label>
-        <ion-button fill="solid" slot="end">View</ion-button>
+        <ion-button [(ngModel)]="desserts" fill="outline" slot="end" (click)="desserts()">View</ion-button>
       </ion-item>
+
 
     </ion-card-content>
   </ion-card>

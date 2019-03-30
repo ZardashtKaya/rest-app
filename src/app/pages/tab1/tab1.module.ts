@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { Tab1Page } from './tab1.page';
-import { Alert } from 'selenium-webdriver';
 
 const routes: Routes = [
 	{
@@ -14,13 +13,14 @@ const routes: Routes = [
 		component: Tab1Page
 	}
 ];
-
+@Component({
+	selector: 'tab1',
+	templateUrl: 'tab1.page.html'
+})
 @NgModule({
 	imports: [ CommonModule, FormsModule, IonicModule, RouterModule.forChild(routes) ],
 	declarations: [ Tab1Page ]
 })
 export class Tab1PageModule {
-	buy() {
-		alert('');
-	}
+	constructor() {}
 }
