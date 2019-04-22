@@ -1,59 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Categories</ion-title>
+  <ion-toolbar class="toolbar">
+    <ion-title >All Items</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  
+  <ion-content  class="card-background-page">
+    <div *ngFor="let item of menu">
+  
   <ion-card>
+    <img src={{item.img}}/>
     <ion-card-header>
-      <ion-card-subtitle>Categories</ion-card-subtitle>
-      <ion-card-title>Drinks</ion-card-title>
+      <ion-card-title >{{ item.name }}</ion-card-title>
+      <ion-card-title class="a">{{ item.price }} IQD</ion-card-title>
     </ion-card-header>
+    
     <ion-card-content>
       <ion-item>
-        <ion-label>Alcohol</ion-label>
-        <ion-button [(ngModel)]="alcohol" fill="outline" slot="end" (click)="alcohol()">View</ion-button>
+        <ion-label>{{ item.description }}</ion-label>
       </ion-item>
-      <ion-item>
-        <ion-label>Non-Alcohol</ion-label>
-        <ion-button [(ngModel)]="nonalcohol" fill="outline" slot="end" (click)="nonalcohol()">View</ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Cocktails</ion-label>
-        <ion-button [(ngModel)]="cocktails" fill="outline" slot="end" (click)="cocktails()">View</ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Hot Drinks</ion-label>
-        <ion-button [(ngModel)]="hotDrinks" fill="outline" slot="end" (click)="hotDrinks()">View</ion-button>
-      </ion-item>
-
+      <ion-button expand="full" shape="round"(click)="placeOrder(item)" >Place Order</ion-button>
+      
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Categories</ion-card-subtitle>
-      <ion-card-title>Food</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item>
-        <ion-label>Pizzas</ion-label>
-        <ion-button [(ngModel)]="pizzas" fill="outline" slot="end" (click)="pizzas()">View</ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Burgers</ion-label>
-        <ion-button [(ngModel)]="burgers" fill="outline" slot="end" (click)="burgers()">View</ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Salads</ion-label>
-        <ion-button [(ngModel)]="salads" fill="outline" slot="end" (click)="salads()">View</ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Desserts</ion-label>
-        <ion-button [(ngModel)]="desserts" fill="outline" slot="end" (click)="desserts()">View</ion-button>
-      </ion-item>
+</div>
+</ion-content>
 
 
-    </ion-card-content>
-  </ion-card>
+
+
 </ion-content>

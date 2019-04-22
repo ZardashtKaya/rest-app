@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content>
+
   <ion-card padding>
     <ion-card-header>
       <ion-card-subtitle>Receipt</ion-card-subtitle>
@@ -13,13 +14,23 @@
     <ion-card-content>
       <ion-item>
         <ion-label>Name</ion-label>
-        <ion-label>Qnt</ion-label>
+
         <ion-label>Price</ion-label>
       </ion-item>
+      <ion-item *ngFor="let item of itemsToBeOrdered">
+        <ion-label text-wrap>{{item.name }}</ion-label>
+        <ion-label>{{ item.price }} IQD</ion-label>
+      </ion-item>
       <ion-item>
-        <ion-label>Burger</ion-label>
-        <ion-label>2</ion-label>
-        <ion-label>3000 IQD</ion-label>
+        <ion-button (click)="add()" shape="round" slot="end">Add to total</ion-button>
+        <ion-button (click)="clear()" shape="round" slot="end">Clear</ion-button>
+        
+        
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Table Number: </ion-label>
+        <ion-input type="text" value="" [(ngModel)]="tableNumber" id="input"></ion-input>
+
       </ion-item>
     </ion-card-content>
   </ion-card>
@@ -27,10 +38,11 @@
   <ion-card padding margin>
     <ion-card-header>
       <ion-card-title>Total</ion-card-title>
-      <ion-card-title padding-top>3000 IQD</ion-card-title>
+      <ion-card-title padding-top>{{ total }} IQD</ion-card-title>
+
     </ion-card-header>
     <ion-card-content text-center>
-      <ion-button size="large" expand="block" shape="round">Order</ion-button>
+      <ion-button (click)="order()" size="large" expand="full" shape="round">Order</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

@@ -1,69 +1,46 @@
+<ion-header>
+    <ion-toolbar class="toolbar">
+      <ion-title >Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
 <ion-content padding-top>
-  <ion-content>
-
-    <ion-card color="primary">
-      <ion-card-header>
-        <ion-card-subtitle>Today's Offer</ion-card-subtitle>
-
-        <ion-card-title>20% off for students!</ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-        <ion-button expand="full" slot="end" color="light" shape="round" (click)="alert()">GET OFFER</ion-button>
 
 
-      </ion-card-content>
-    </ion-card>
+  
+  <ion-content class="card-background-page">
+    <ion-card color="primary" padding>
+        <ion-card-header>
+          <ion-card-subtitle>Today's Offer</ion-card-subtitle>
+  
+          <ion-card-title>20% off for students!</ion-card-title>
+        </ion-card-header>
+  
+        <ion-card-content>
+          <ion-button expand="full" slot="end" color="light" shape="round" (click)="alert()">GET OFFER</ion-button>
+        </ion-card-content>
+      </ion-card>
 
-    <ion-card>
-      <ion-item>
-        <img padding class="logo-img" src="https://i.ibb.co/6XvqJ2m/profile-pic.jpg" width="2" />
-        <ion-label>Caeser Salad</ion-label>
-        <ion-button color="primary" fill="solid" slot="end" shape="round" onclick="buy()">2000 IQD</ion-button>
-      </ion-item>
+      <div *ngFor="let item of menu">
 
-      <ion-card-content>
-        A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg,
-        Worcestershire sauce, anchovies, garlic, Dijon mustard, and Parmesan cheese.
-      </ion-card-content>
-    </ion-card>
 
-    <ion-card>
-      <ion-item>
-        <img padding class="logo-img" src="https://i.ibb.co/6XvqJ2m/profile-pic.jpg" width="2" />
-        <ion-label>Caeser Salad</ion-label>
-        <ion-button color="primary" fill="solid" slot="end" shape="round">2000 IQD</ion-button>
-      </ion-item>
+        <ion-card>
+          <img src={{item.img}} />
+          <ion-card-header>
+            <ion-card-title>{{ item.name }}</ion-card-title>
+            <ion-card-title class="a">{{ item.price }} IQD</ion-card-title>
+          </ion-card-header>
 
-      <ion-card-content>
-        A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg,
-        Worcestershire sauce, anchovies, garlic, Dijon mustard, and Parmesan cheese.
-      </ion-card-content>
-    </ion-card>
-    <ion-card>
-      <ion-item>
-        <img padding class="logo-img" src="https://i.ibb.co/6XvqJ2m/profile-pic.jpg" width="2" />
-        <ion-label>Caeser Salad</ion-label>
-        <ion-button color="primary" fill="solid" slot="end" shape="round">2000 IQD</ion-button>
-      </ion-item>
+          <ion-card-content>
+            <ion-item>
+              <ion-label>{{ item.description }}</ion-label>
+            </ion-item>
+            <ion-button expand="full" shape="round" (click)="placeOrder(item)">Place Order</ion-button>
 
-      <ion-card-content>
-        A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg,
-        Worcestershire sauce, anchovies, garlic, Dijon mustard, and Parmesan cheese.
-      </ion-card-content>
-    </ion-card>
-    <ion-card>
-      <ion-item>
-        <img padding class="logo-img" src="https://i.ibb.co/6XvqJ2m/profile-pic.jpg" width="2" />
-        <ion-label>Caeser Salad</ion-label>
-        <ion-button color="primary" fill="solid" slot="end" shape="round">2000 IQD</ion-button>
-      </ion-item>
-
-      <ion-card-content>
-        A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg,
-        Worcestershire sauce, anchovies, garlic, Dijon mustard, and Parmesan cheese.
-      </ion-card-content>
-    </ion-card>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-content>
 
 
 

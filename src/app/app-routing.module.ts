@@ -9,7 +9,7 @@ const routes: Routes = [
 	{ path: 'tab2', loadChildren: './pages/tab2/tab2.module#Tab2PageModule' },
 	{ path: 'tab3', loadChildren: './pages/tab3/tab3.module#Tab3PageModule' },
 	{ path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-	{ path: 'category-page/:myid', loadChildren: './pages/category-page/category-page.module#CategoryPagePageModule' }
+	{ path: 'category-page/:id', loadChildren: './pages/category-page/category-page.module#CategoryPagePageModule' }
 ];
 
 @NgModule({

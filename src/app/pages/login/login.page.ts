@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 	constructor() {}
-	server: String = 'TEST_SERVER';
+	server: String = 'Sample Cafe';
 	ngOnInit() {}
 }

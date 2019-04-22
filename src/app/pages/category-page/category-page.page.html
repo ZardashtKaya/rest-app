@@ -9,11 +9,28 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let a of passedId">
-    <ion-card-title padding>
-      {{a}}
+  <div *ngFor="let item of itm">
+    <!-- <ion-label *ngIf="item.id == result.id">
+          {{ item.name }}
+          <ion-button (click)="placeOrder(item)" >Place Order</ion-button>
+      </ion-label> -->
 
-    </ion-card-title>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{ item.price }}$</ion-card-subtitle>
+        <ion-card-title>{{ item.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>{{ item.description }}</ion-label>
+          <ion-button (click)="placeOrder(item)">Place Order</ion-button>
+        </ion-item>
 
-  </ion-card>
+      </ion-card-content>
+    </ion-card>
+
+
+  </div>
+
+
 </ion-content>
