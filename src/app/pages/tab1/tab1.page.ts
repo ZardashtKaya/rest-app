@@ -47,11 +47,11 @@ export class Tab1Page implements OnInit {
 		},
 		{
 			id: 5,
-			name: 'Large Pizza',
-			price: 5000,
+			name: 'Margherita',
+			price: 7000,
 			img:
 				'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/220px-Eq_it-na_pizza-margherita_sep2005_sml.jpg',
-			description: 'Chicken + Mushrooms + Tomatoes'
+			description: 'Cheese + Olive Oil'
 		},
 		{
 			id: 6,
@@ -68,7 +68,25 @@ export class Tab1Page implements OnInit {
 			img:
 				'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Orange_juice_1_edit1.jpg/220px-Orange_juice_1_edit1.jpg',
 			description: 'Orange extract + Lemon extract'
-		}
+		},
+		{
+			id: 8,
+			name: 'Meat Lasagna',
+			price: 6000,
+			img:
+				'https://www.jessicagavin.com/wp-content/uploads/2014/02/meat-lasagna-in-pan.jpg',
+			description: 'Noodle + Meat + Cheese + Tomato sauce'
+		},
+		{
+			id: 9,
+			name: 'Chicken Wings',
+			price: 5000,
+			img:
+				'https://homemadehooplah.com/wp-content/uploads/2018/07/honey-garlic-chicken-wings-1.jpg',
+			description: 'spicey or sour chicken wings. 6 pieces'
+		},
+		
+
 	];
 
 	itminfo: String;

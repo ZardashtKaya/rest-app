@@ -45,11 +45,11 @@ export class Tab2Page implements OnInit {
 		},
 		{
 			id: 5,
-			name: 'Large Pizza',
-			price: 5000,
+			name: 'Margherita Pizza',
+			price: 7000,
 			img:
-				'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/220px-Eq_it-na_pizza-margherita_sep2005_sml.jpg',
-			description: 'Chicken + Mushrooms + Tomatoes'
+				'',
+			description: 'Cheese + Olive Oil'
 		},
 		{
 			id: 6,
@@ -66,7 +66,151 @@ export class Tab2Page implements OnInit {
 			img:
 				'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Orange_juice_1_edit1.jpg/220px-Orange_juice_1_edit1.jpg',
 			description: 'Orange extract + Lemon extract'
-		}
+		},
+		{
+			id: 8,
+			name: 'Meat Lasagna',
+			price: 6000,
+			img:
+				'https://www.jessicagavin.com/wp-content/uploads/2014/02/meat-lasagna-in-pan.jpg',
+			description: 'Noodle + Meat + Cheese + Tomato sauce'
+		},
+		{
+			id: 9,
+			name: 'Chicken Wings',
+			price: 5000,
+			img:
+				'https://homemadehooplah.com/wp-content/uploads/2018/07/honey-garlic-chicken-wings-1.jpg',
+			description: 'Spicey or sour chicken wings. 6 pieces'
+		},
+		{
+			id: 10,
+			name: 'Caesar Salad',
+			price: 6000,
+			img:
+				'https://www.thespruceeats.com/thmb/vttp7HVQk0jBfol4IbHgL5tmToY=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/caesar-salad-2500-56a210635f9b58b7d0c62d64.jpg',
+			description: 'Crouton + Lettuce + Cheese + Tomato'
+		},
+		{
+			id: 11,
+			name: 'Soup',
+			price: 2500,
+			img:
+				'',
+			description: 'Daily soup'
+		},
+		{
+			id: 12,
+			name: 'Boccolotti Pasta',
+			price: 8000,
+			img:	
+				'',
+			description: ''
+		},
+		{
+			id: 13,
+			name: 'Pepperoni Pizza',
+			price: 8000,
+			img:
+				'',
+			description: 'Pepperoni + Cheese + Pepper'	
+		},
+		{
+			id: 14,
+			name: 'Shrimp Pizza',
+			price: 12000,
+			img:
+				'https://theblondcook.com/wp-content/uploads/2017/06/shrimp-scampi-pizza-1.jpg',
+			description: 'Shrimp + Tomato Sauce + Olive Oil + Cherry Tomato + Parsely'
+		},
+		{
+			id: 15,
+			name: 'Mozzarella & Chicken Focaccia',
+			price: 6000,
+			img:
+				'',
+			description: 'Cooked Chicken + Lettuce + Sliced Mozzarella'
+		},
+		{
+			id: 16,
+			name: 'Margherita Focaccia',
+			price: 5000,
+			img:
+				'',
+			description: 'Tomato + Basil + Mozzarella'
+		},
+		{
+			id: 17,
+			name: 'Pannacotta',
+			price: 3000,
+			img:
+				'',
+			description: 'Dessert'
+		},
+		{
+			id: 18,
+			name: 'Tiramisu',
+			price: 3000,
+			img:
+				'',
+			description: 'Dessert',
+		},
+		{
+			id: 19,
+			name: 'Muffin',
+			price: 2000,
+			img:
+				'',
+			description: 'Dessert'
+		},
+		{
+			id: 20,
+			name: 'Chocolate lava cake',
+			price: 4000,
+			img:
+				'',
+			description: 'Dessert'
+		},
+		{
+			id: 21,
+			name: 'Ice Coffee',
+			price: 4000,
+			img:
+				'',
+			description: 'Coffee + Milk + Ice'
+		},
+		{
+			id: 22,
+			name: 'Latte Macchiato',
+			price: 4000,
+			img:
+				'',
+			description: 'Espresso + Milk Cream'
+		},
+		{
+			id: 23,
+			name: 'Hot Chocolate',
+			price: 3000,
+			img: 
+				'https://www.cookingclassy.com/wp-content/uploads/2018/10/hot-chocolate-15.jpg',
+			description: 'Hot chocolate'
+		},
+		{
+			id: 24,
+			name: 'Slush',
+			price: 2500,
+			img:
+				'https://chocolato.co.uk/wp-content/uploads/2016/10/slush-drink-machine-682x1024.jpg',
+			description: 'Milk Slush, Pomegrant Slush, Lemon Slush, Chocolate Slush'
+		},
+		{
+			id: 25,
+			name: 'Water',
+			price: 500,
+			img:
+				'https://img.jakpost.net/c/2016/06/13/2016_06_13_6370_1465804273._large.jpg',
+			description: 'Cold or Warm water'
+		},
 	];
 	itminfo: String;
 
