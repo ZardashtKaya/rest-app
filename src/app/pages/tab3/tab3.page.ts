@@ -39,6 +39,8 @@ export class Tab3Page implements OnInit {
 
 	}
 	name:string;
+	tableNumber:String
+	notes:String
 	
 	order() {
 		this.storage.set('items', []);
@@ -52,6 +54,7 @@ export class Tab3Page implements OnInit {
 	clear() {
 		this.storage.set('items', []);
 		this.total = 0;
+		this.add()
 	}
 
 	ngOnInit() {}
